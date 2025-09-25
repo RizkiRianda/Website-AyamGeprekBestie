@@ -1,0 +1,234 @@
+.hero-img-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+nav {
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+.logo-bestie {
+    height: 90px;
+    width: auto;
+    border-radius: 16px;
+    opacity: 0;
+    transform: scale(0.7);
+    animation: logoFadeIn 1s cubic-bezier(.5,1.5,.5,1) 0.2s forwards;
+}
+
+@keyframes logoFadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+    80% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background: #a32019;
+    color: #fff;
+}
+header {
+    background: #ff9800;
+    color: #fff;
+    padding: 20px 0 10px 0;
+    position: relative;
+}
+header {
+    background: #ff9800;
+    color: #fff;
+    padding: 20px 0 10px 0;
+    position: relative;
+}
+header {
+    background: #ff9800;
+    color: #fff;
+    padding: 20px 0 10px 0;
+    position: relative;
+}
+header {
+    background: #ff9800;
+    color: #fff;
+    padding: 20px 0 10px 0;
+    position: relative;
+}
+header {
+    background: #ff9800;
+    color: #fff;
+    padding: 20px 0 10px 0;
+    position: relative;
+}
+header {
+    background: #ff9800;
+    color: #fff;
+    padding: 20px 0 10px 0;
+    position: relative;
+}
+.hero-text {
+    flex: 1;
+    text-align: center;
+}
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background: #a32019;
+    color: #fff;
+}
+header {
+    background: #ff9800;
+    color: #fff;
+    padding: 20px 0 10px 0;
+    position: relative;
+}
+.header-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    gap: 16px;
+}
+.header-title {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+.header-title h1 {
+    margin: 0;
+    font-size: 2.1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.header-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 90px;
+    min-width: 90px;
+}
+.logo-bestie {
+    height: 90px;
+    width: auto;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    background: #fff;
+    padding: 4px;
+}
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.15rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.2s;
+}
+nav a:hover {
+    color: #ffd600;
+}
+section {
+    margin: 40px auto;
+    max-width: 900px;
+    padding: 0 20px;
+}
+.menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+.menu-item {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 20px;
+    width: 260px;
+    text-align: center;
+}
+.menu-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.menu-item h3 {
+    margin: 15px 0 8px;
+    color: #ff9800;
+}
+.menu-item .price {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #e65100;
+}
+.order-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.order-btn {
+    background: #ff9800;
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+.order-btn.gofood { background: #ff3d00; }
+.order-btn.grabfood { background: #00c853; }
+.order-btn.shopeefood { background: #ff5722; }
+.order-btn:hover {
+    opacity: 0.85;
+}
+footer {
+    background: #ff9800;
+    color: #fff;
+    text-align: center;
+    padding: 16px 0;
+    margin-top: 40px;
+}
+@media (max-width: 700px) {
+    .header-flex {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        padding: 0 8px;
+    }
+    .header-title {
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+    .header-logo {
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 8px;
+    }
+    .menu-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-item {
+        width: 90%;
+    }
+}
